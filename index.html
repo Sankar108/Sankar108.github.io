@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple YouTube</title>
+    <link rel="stylesheet" href="style/demos.css" type="text/css">
+    <!-- Dependencies -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/js.cookie.js"></script>
+    <script src="scripts/save-vtt-files.js"></script>
+
+    <!-- Able Player CSS -->
+    <link rel="stylesheet" href="style/ableplayer.min.css" type="text/css" />
+
+    <!-- Able Player JavaScript -->
+    <script src="scripts/ableplayer.js"></script>
+
+    <!-- styles for this example page -->
+    <style>
+        .wrapper {
+            width: 500px;
+            max-width: 100%;
+        }
+        
+        p {
+            width: 600px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- https://img.youtube.com/vi/Uu288UwuQvM/0.jpg -->
+        <video id="video1" data-able-player data-skin="2020" preload="auto" data-youtube-id="Uu288UwuQvM">
+            <track kind="captions" src="wwa/wwa_captions_en.vtt" srclang="en" label="English"/>
+            <track kind="subtitles" src="wwa/wwa_captions_es.vtt" srclang="es" label="Espanol"/>
+            <track kind="descriptions" src="wwa/wwa_description_en.vtt" srclang="en"/>
+            <!-- <track kind="descriptions" src="wwa/wwa_description_es.vtt" srclang="es"/>
+            <track kind="chapters" src="wwa/wwa_chapters_en.vtt" srclang="en"/>
+            <track kind="chapters" src="wwa/wwa_chapters_es.vtt" srclang="es"/> -->
+        </video>
+        <!-- <video id="video1" data-able-player data-skin="2020" preload="auto" data-youtube-id="dhwpLACAls8" data-youtube-desc-id="Ck2TdVMhWcU">
+        </video> -->
+    </div>
+</body>
+
+</html>
